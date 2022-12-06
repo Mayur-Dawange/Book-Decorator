@@ -1,0 +1,146 @@
+@import "../../Assets/scss/variabel";
+
+.banner_section{
+    padding: 50px 0;
+    background-color: #fff6f6;
+    .banner_box{
+      align-items: center;
+    }
+    .search_box {
+      display: flex;
+      justify-content: flex-start;
+      gap: 15px;
+      margin-top: 25px;
+      .search_field{
+          width: auto;
+          background: #F9FAFB;
+          &:before{
+            content: "";
+            display: flex;
+            height: 16px;
+            width: 16px;
+            z-index: 2;
+            top: 34%;
+            left: 5%;
+            position: absolute;
+            background: url("../../Assets/img/location.svg")repeat no-repeat center center/cover ;
+          }
+          input{
+            padding-left: 35px;
+          }
+          label{
+            padding-left: 26px;
+            padding-right: 26px;
+            background-color: #F9FAFB;
+          }
+      }
+    .call_now_btn {
+      background: #E41F24;
+      color: #fff;
+      font-size: 17px;
+      width: 100%;
+      max-width: 190px;
+    }
+    }
+}
+
+.banner_list{
+  li{
+    &::marker {
+            color: #F7B200;
+            width: 16px;
+            height: 16px;
+        }
+  }
+
+}
+
+@media (min-width:769px) and (max-width:992px) {
+  .banner_section {
+      .banner_box {
+          align-items: center;
+          flex-direction: column;
+          flex-flow: column-reverse;
+
+          .css-1osj8n2-MuiGrid-root {
+            max-width: 100%;
+            width: 100%;
+          }
+        }
+    }
+}
+@media (min-width:541px)and (max-width:767px) {
+
+  .banner_section {
+    .banner_box {
+      align-items: center;
+      flex-direction: column;
+      flex-flow: column-reverse;
+
+      p {
+        font-size: 13px;
+        line-height: 19px;
+      }
+
+      .banner_list {
+        font-size: 14px;
+        line-height: 21px;
+        padding-left: 15px;
+      }
+
+      .css-1osj8n2-MuiGrid-root {
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+
+    .banner_title {
+      font-size: 32px;
+      line-height: 32px;
+    }
+  }
+}
+
+@media (max-width:540px) {
+  .banner_section {
+      .banner_box {
+        align-items: center;
+        flex-direction: column;
+        flex-flow: column-reverse;
+
+        p {
+          font-size: 13px;
+          line-height: 19px;
+        }
+
+        .banner_list {
+          font-size: 14px;
+          line-height: 21px;
+          padding-left: 15px;
+        }
+
+        .css-1osj8n2-MuiGrid-root {
+          max-width: 100%;
+          width: 100%;
+        }
+      }
+
+      .banner_title {
+        font-size: 32px;
+        line-height: 32px;
+      }
+      .search_box {
+        display: block;
+
+        .search_field {
+          width: 100%;
+        }
+
+        .call_now_btn {
+          max-width: 100%;
+        }
+      }
+    }
+
+
+}

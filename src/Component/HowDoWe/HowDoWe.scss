@@ -1,0 +1,151 @@
+@import "../../Assets/scss/variabel";
+.how_do_we_section{
+    background-color: $bg-color;
+}
+.how_do_we_img{
+    position: relative;
+    padding: 80px;
+
+    img{
+        position: relative;
+        margin-left: 30px;
+
+    }
+    &::before{
+        content: "";
+        height: 75%;
+        width: 76%;
+        top: 8%;
+        position: absolute;
+        background: url("../../Assets/img/Vector.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        transform: rotate(-6deg);
+        height: calc(100% - 100px);
+    }
+
+}
+.how_do_right_box{
+    .book_now_btn{
+        background: #E41F24;
+            color: #fff;
+            font-size: 17px;
+            width: 100%;
+            max-width: 190px;
+          &:hover{
+            background: #E41F24;
+                color: #fff;
+                font-size: 17px;
+                width: 100%;
+                max-width: 190px;
+          }
+    }
+    .how_do_we_list{
+        margin-bottom: 30px;
+        padding-left: 15px;
+    }
+}
+
+.how_do_we_list {
+    li {
+        &::marker {
+            color: #F7B200;
+            width: 16px;
+            height: 16px;
+        }
+    }
+
+}
+@media (min-width:769px) and (max-width:992px) {
+}
+
+@media (min-width:541px)and (max-width:767px) {
+.how_do_we_container {
+        .how_do_right_box {
+            h2 {
+                font-size: 26px;
+                line-height: 26px;
+            }
+
+            p {
+                font-size: 13px;
+                line-height: 19px;
+            }
+
+            .how_do_we_list {
+                li {
+                    font-size: 14px;
+                    line-height: 21px;
+                }
+            }
+
+            .book_now_btn {
+                background: #E41F24;
+                color: #fff;
+                font-size: 17px;
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+
+        .how_do_we_box {
+            display: block;
+
+            .MuiGrid-item {
+                max-width: 100%;
+                padding: 15px;
+            }
+
+            .how_do_we_img {
+                padding: 0px;
+
+                img {
+                    margin-left: 0px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:540px) {
+    .how_do_we_container{
+        .how_do_right_box{
+            h2{
+                font-size: 26px;
+                line-height: 26px;
+            }
+            p{
+                font-size: 13px;
+                line-height: 19px;
+            }
+            .how_do_we_list{
+               li{
+                font-size: 14px;
+                line-height: 21px;
+               }
+            }
+            .book_now_btn {
+                background: #E41F24;
+                color: #fff;
+                font-size: 17px;
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+    .how_do_we_box{
+        display: block;
+        .MuiGrid-item{
+            max-width: 100%;
+            padding: 15px;
+        }
+        .how_do_we_img{
+            padding: 0px;
+            img{
+                margin-left: 0px;
+            }
+        }
+    }
+}
+
+}

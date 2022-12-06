@@ -1,0 +1,103 @@
+ .cards {
+     padding: 30px 0;
+    // &:after {
+    //         content: "";
+    //         display: block;
+    //         background-image: url("../../Assets/img/top_curve.svg");
+    //         background-size: cover;
+    //         background-repeat: no-repeat;
+    //     }
+ }
+.how_it_work_row{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+
+    .card_box {
+            max-width: 33.33%;
+            position: relative;
+
+            &:nth-child(1):after{
+                content: "";
+                background-image: url("../../Assets/img/top_curve.svg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 80%;
+                display: block;
+                top: 10px;
+                height: 60px;
+                left: 186px;
+                position: absolute;
+                transform: rotate(20deg);
+                z-index: -1;
+            }
+            &:nth-child(2):after {
+                content: "";
+                background-image: url("../../Assets/img/bottom_curve.svg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 80%;
+                display: block;
+                bottom: 60px;
+                height: 60px;
+                left: 186px;
+                position: absolute;
+                transform: rotate(-8deg);
+                z-index: -1;
+            }
+
+            img{
+                display: block;
+                margin: auto;
+                margin-bottom: -30px;
+                width: 50%;
+            }
+            .top_line{
+                position: absolute;
+                top: 0;
+                width: 90%;
+                left: 170px;
+                z-index: -1;
+                transform: rotate(8deg);
+                img{
+                    width: 100%;
+                }
+            }
+            .bottom_line {
+                position: absolute;
+                bottom: 95px;
+                width: 90%;
+                /* left: 4px; */
+                right: 156px;
+                z-index: -1;
+                transform: rotate(2deg);
+                img {
+                    width: 100%;
+                }
+            }
+
+    .crad_text {
+        max-width: 300px;
+        text-align: center;
+        margin: auto;
+    }
+        }
+
+}
+.cardtitle{
+    text-align: center;
+    gap: 10px;
+    font-size: 24px;
+    display: flex;
+    align-items: baseline;
+
+    span{
+        font-size: 70px;
+        line-height: 70px;
+        font-weight: 700;
+        color: #FFE5E5;
+        left: 0;
+        top: 0;
+    }
+}

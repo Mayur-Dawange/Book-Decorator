@@ -1,0 +1,55 @@
+@import "../../Assets/scss/variabel";
+header.MuiPaper-root.MuiPaper-elevation {
+    background: #fff6f6;
+    color: black;
+    padding: 15px 0;
+}
+.MuiBox-root.css-1t6c9ts {
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+
+}
+.MuiBox-root{
+    justify-content: end;
+}
+.MuiIconButton-root{
+    display: none;
+}
+.css-1lvtzne{
+    align-items: center;
+    .call-btn {
+        padding: 5px 10px;
+        background: transparent;
+        border: 2px solid #e41f24;
+        border-radius: 50px;
+        margin-right: 10px;
+        gap: 5px;
+        color: $primary-color;
+        width: max-content;
+        }
+}
+.css-1t6c9ts{
+    .call_btn2 {
+            padding: 5px 10px;
+            background: transparent;
+            border: 2px solid #e41f24;
+            border-radius: 50px;
+            margin-right: 10px;
+            gap: 5px;
+            color: $primary-color;
+        }
+
+}
+
+.css-1lvtzne .MuiButtonBase-root.css-1pz7awu-MuiButtonBase-root-MuiIconButton-root{
+    display: none;
+
+}
+
+@media (max-width:768px) {
+    .logo{
+        width: 150px;
+    }
+
+}
