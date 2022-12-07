@@ -1,0 +1,57 @@
+.project_slick{
+    .slick-list {
+        .project_img{
+            position: relative;        }
+            padding: 20px 0px;
+            .project_sl_text{
+                position: absolute;
+                bottom: 0;
+                background: rgb(0, 0, 0);
+                background: linear-gradient(0deg, rgba(0, 0, 0, 0.822) 3%, rgba(255, 255, 255, 0) 100%);
+                width: 100%;
+                color: #fff;
+                padding-bottom: 10px;
+                p{
+                    font-weight: 550;
+                    padding-left: 10px;
+                    &:nth-child(1){
+                        font-size: 18px;
+                    }
+                    &:nth-child(2) {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    .slick-dots {
+            text-align: end;
+
+
+    .slick-active {
+            button {
+                color: red;
+                font-size: 26px;
+                font-weight: 550;
+            }
+
+        }
+    }
+
+
+
+    .slick-dots li button {
+            font-size: 20px;
+            line-height: 0;
+            display: block;
+            width: 20px;
+            height: 20px;
+            padding: 5px;
+            cursor: pointer;
+            color: #240c0c;
+            border: 0;
+            outline: none;
+            &:before{
+                content: "";
+            }
+        }
+}
