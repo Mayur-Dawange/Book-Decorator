@@ -26,7 +26,7 @@ const settings = {
       },
     },
     {
-      breakpoint: 480,
+      breakpoint: 540,
       settings: {
         arrows: false,
         centerPadding: "00px",
@@ -38,7 +38,7 @@ const settings = {
 };
 
 const ProjectSection = styled.section`
-  padding: 80px;
+  padding: 80px 0;
 `;
 
 const Title = styled.h2`
@@ -66,6 +66,14 @@ const Paragraph = styled.p`
 const ProjectSlImg = styled.img`
   width: 100%;
 `;
+const SliderLine = styled.div`
+  width: 20%;
+  height: 5px;
+  background: #e9e9e9;
+  margin: auto;
+  position: relative;
+  top: 10px;
+`;
 
 const ProjectSlider = () => {
   return (
@@ -85,7 +93,7 @@ const ProjectSlider = () => {
                 </Paragraph>
               </HowDoWeTitleeBox>
             </Grid>
-            <Grid item xs={8}>
+            <Grid item xs={8} className="project_sl_grid">
               <Slider {...settings} className="project_slick">
                 <div className="project_sl_box">
                   <div className="project_img">
@@ -124,6 +132,9 @@ const ProjectSlider = () => {
                   </div>
                 </div>
               </Slider>
+              <SliderLine className="sl_line">
+                <span className="out_sl_line"> </span>
+              </SliderLine>
             </Grid>
           </Grid>
         </Container>

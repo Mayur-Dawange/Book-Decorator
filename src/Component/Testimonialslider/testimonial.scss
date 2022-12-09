@@ -100,3 +100,34 @@
                 }
 
 }
+
+@media (max-width:768px) {
+    section.sc-iveFHk.cAxUXl.testimonial_section{
+        padding: 40px 0;
+    }
+    .testm_container{
+        .tetm_heading {
+            font-size: 26px;
+            line-height: 30px;
+            padding: 20px 0;
+        }
+    }
+    .testimonial_slick .slick-slide.slick-active.slick-center.slick-current{
+        background-size: contain;
+
+
+    }
+    .testimonial_slick{
+        .slick-prev {
+                left: 43%;
+            }
+
+            .slick-next {
+                right: 43%;
+            }
+            .testm_box {
+                padding: 40px 0;
+            }
+    }
+
+}

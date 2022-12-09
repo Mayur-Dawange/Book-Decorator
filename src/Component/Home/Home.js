@@ -1,5 +1,6 @@
 import React from "react";
 import BannerStyled from "../Banner/BannerStyled";
+import GridSystem from "../GridSystem/GridSystem";
 import HowDoWe from "../HowDoWe/HowDoWe";
 import HowItWorks from "../HowItWorks/HowItWorks";
 import MapSection from "../MapSection/MapSection";
@@ -17,6 +18,7 @@ const Home = () => {
       <Testimonialslider />
       <MapSection />
       <ReadyToBook />
+      <GridSystem />
     </div>
   );
 };

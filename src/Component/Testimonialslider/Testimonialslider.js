@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import testmSlider1 from "../../Assets/img/testm_1.png";
 import { Container } from "@mui/material";
 import "./testimonial.scss";
+// import Testimonial from "./Testimonial";
 
 const TestimonialSection = styled.section`
   padding: 80px 0;
@@ -38,7 +39,7 @@ const Testimonialslider = () => {
           arrows: false,
           centerMode: true,
           centerPadding: "00px",
-          slidesToShow: 2,
+          slidesToShow: 1,
         },
       },
       {
@@ -53,11 +54,12 @@ const Testimonialslider = () => {
     ],
     // centerMode: true,
   };
+
   return (
     <>
       <TestimonialSection className="testimonial_section">
-        <Container>
-          <Testmh2>
+        <Container className="testm_container">
+          <Testmh2 className="tetm_heading">
             <Span>Our Clients say</Span> it Best
           </Testmh2>
           <Slider {...settings} className="testimonial_slick">

@@ -3,6 +3,7 @@ import { Button } from "@mui/material";
 import styled from "styled-components";
 import { Container, Grid } from "@mui/material";
 import map from "../../Assets/img/map.svg";
+import "./MapSection.scss";
 
 const Title = styled.h2`
   font-size: 36px;

@@ -38,3 +38,16 @@
         max-width: 190px;
     }
 }
+@media (max-width:768px) {
+    .rady_to_btn{
+        flex-direction: column;
+        align-items: center;
+        .book_now_btn{
+            background: #e41f24;
+            color: #fff;
+            font-size: 17px;
+            width: 100%;
+            max-width: 255px;
+            }
+        }
+}

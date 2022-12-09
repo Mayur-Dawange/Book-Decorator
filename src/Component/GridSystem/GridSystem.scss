@@ -1,0 +1,26 @@
+.box{
+    display: grid;
+    background-color: antiquewhite;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px 1fr 100px;
+    gap: 20px;
+
+    .item {
+            height: 100%;
+            width: 100%;
+            background-color: aliceblue;
+        }
+
+        .header {
+           grid-column: 1/span 4;
+            background-color: black;
+            color: aliceblue;
+        }
+
+        .footer {
+            grid-column-start: 1;
+            grid-column-end: 5;
+            background-color: black;
+            color: aliceblue;
+        }
+}

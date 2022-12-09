@@ -11,9 +11,11 @@
       justify-content: flex-start;
       gap: 15px;
       margin-top: 25px;
+
       .search_field{
           width: auto;
           background: #F9FAFB;
+
           &:before{
             content: "";
             display: flex;

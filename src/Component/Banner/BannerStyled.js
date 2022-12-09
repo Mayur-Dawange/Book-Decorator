@@ -29,6 +29,7 @@ const Paragraph = styled.p`
   max-width: 440px;
   font-size: 20px;
   line-height: 30px;
+  margin-top: 20px;
 `;
 const UnorderedList = styled.ul`
   font-size: 20px;
